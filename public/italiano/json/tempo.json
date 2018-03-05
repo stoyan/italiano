@@ -1,0 +1,157 @@
+[
+  [
+    "Tempo",
+    "time",
+    "The speed of music e.g. 120 BPM"
+  ],
+  [
+    "Grave",
+    "solemn",
+    "Slow and solemn, slower than largo"
+  ],
+  [
+    "Largo",
+    "broad",
+    "Slow and dignified"
+  ],
+  [
+    "Larghetto",
+    "a little bit broad",
+    "Not as slow as largo"
+  ],
+  [
+    "Lentando",
+    "slowing",
+    "Becoming slower"
+  ],
+  [
+    "Lento",
+    "slow",
+    "Slow"
+  ],
+  [
+    "Tardo",
+    "slow",
+    "Slow"
+  ],
+  [
+    "Adagio",
+    "ad agio, at ease",
+    "Slow, but not as slow as largo"
+  ],
+  [
+    "Adagietto",
+    "little adagio",
+    "Faster than adagio; or a short adagio composition"
+  ],
+  [
+    "Andante",
+    "at a walking pace",
+    "Moderately slow, flowing along"
+  ],
+  [
+    "Andantino",
+    "slightly faster than andante",
+    "slightly faster than andante"
+  ],
+  [
+    "Moderato",
+    "moderately",
+    "At a moderate speed"
+  ],
+  [
+    "Allegretto",
+    "a little bit joyful",
+    "Slightly slower than allegro"
+  ],
+  [
+    "Largamente",
+    "broadly",
+    "Slow and dignified"
+  ],
+  [
+    "Mosso",
+    "moved",
+    "Agitated"
+  ],
+  [
+    "Allegro",
+    "joyful; lively and fast",
+    "Moderately fast"
+  ],
+  [
+    "Sostenuto",
+    "sustained",
+    "A slowing of tempo, often accompanied by legato playing"
+  ],
+  [
+    "Fermata",
+    "stopped",
+    "Marks a note to be held or sustained"
+  ],
+  [
+    "Presto",
+    "ready",
+    "Very fast"
+  ],
+  [
+    "Prestissimo",
+    "very ready",
+    "Very very fast, as fast as possible"
+  ],
+  [
+    "Accelerando",
+    "accelerating",
+    "Accelerating"
+  ],
+  [
+    "Affrettando",
+    "becoming hurried",
+    "Accelerating"
+  ],
+  [
+    "Allargando",
+    "slowing and broadening",
+    "Slowing down and broadening, becoming more stately and majestic, possibly louder"
+  ],
+  [
+    "Ritardando",
+    "slowing down",
+    "Decelerating"
+  ],
+  [
+    "Rallentando",
+    "becoming progressively slower",
+    "Decelerating"
+  ],
+  [
+    "Rubato",
+    "robbed",
+    "Free flowing and exempt from steady rhythm"
+  ],
+  [
+    "Tenuto",
+    "sustained",
+    "Holding or sustaining a single note"
+  ],
+  [
+    "Accompagnato",
+    "accompanied",
+    "The accompaniment must follow the singer who can speed up or slow down at will"
+  ],
+  [
+    "Alla marcia",
+    "as a march",
+    "In strict tempo at a marching pace (e.g. 120 bpm)"
+  ],
+  [
+    "A tempo",
+    "to time",
+    "Return to previous tempo"
+  ],
+  [
+    "L'istesso tempo",
+    "Same speed",
+    "At the same speed"
+  ]
+]

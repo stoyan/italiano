@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <meta name="theme-color" content="#222">
+    <title>Italian for Musicians</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-family: Helvetica Neue, sans-serif;
+      overflow-x: hidden;
+    }
+    .App {
+      text-align: center;
+    }
+
+    .App-header, .App-footer {
+      background-color: #233041;
+      padding: 20px;
+      color: #efefef;
+    }
+
+    .App-header a, .App-footer a{
+      color: #efefef;
+    }
+
+    .App-header a:hover, .App-footer a:hover {
+      text-decoration: none;
+      color: #efefef;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0px;
+    }
+
+    .App-body {
+      font-size: large;
+      color: #111;
+      padding: 20px;
+    }
+
+    .smallprint {
+      font-size: small;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="App">
+      <div class="App-header">
+        <h1>Italian for musicians</h1>
+        <p>Flashcards for practicing musical terms in Italian</p>
+      </div>
+      <div class="App-body" id="root">Loading the flashcards...</div>
+      <p class="smallprint">
+        Keyboard shortcuts: 
+          Play ('P' or 'p'),
+          Next ('N' or 'n' or right arrow),
+          Flip ('F' or 'f' or down arrow),
+      </p>
+      <div class="App-footer smallprint">
+        coding by <a href="https://music.stoyanstefanov.com/">Stoyan</a>, 
+        content by <a href="https://en.wikipedia.org/wiki/List_of_Italian_musical_terms_used_in_English">Wikipedia</a>,
+        pronunciation by MacOS.
+      </div>
+    </div>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+      }
+    </script>
+    <div style="display: none"><div id="_vex"></div></div>
+  </body>
+</html>

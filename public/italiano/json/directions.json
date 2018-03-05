@@ -1,0 +1,37 @@
+[
+  [
+    "Attacca",
+    "attach", 
+    "Proceed to the next section without pause"
+  ],
+  [
+    "Cambiare",
+    "change",
+    "Any change, such as to a new instrument"
+  ],
+  [
+    "Da Capo (al fine)",
+    "from the beginning (to the end)",
+    "Abbreviated as D.C., informs the performer to go back to the beginning (capo) (finishing where the part is marked fine)"
+  ],
+  [
+    "Dal Segno",
+    "from the sign",
+    "Abbreviated as D.S., informs the performer to repeat a specific section marked by a sign (segno)"
+  ],
+  [
+    "Divisi",
+    "divided",
+    "Instructs one section to divide into two or more separate sections, each playing a separate part. Often these separate parts are written on the same staff."
+  ],
+  [
+    "Oppure",
+    "otherwise",
+    "Informs the player of alternative ways to play a passage. See Ossia."
+  ],
+  [
+    "solo",
+    "alone",
+    "A piece or performance to be played by a single musician"
+  ]
+]

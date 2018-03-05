@@ -1,0 +1,152 @@
+[
+  [
+    "Altissimo",
+    "very high", 
+    "Very high"
+  ],
+  [
+    "Arpeggio",
+    "harp-like",
+    "A chord with the notes spread out in time (rather than sounded simultaneously)"
+  ],
+  [
+    "Acciaccatura",
+    "crushing",
+    "An extra, very fast grace note"
+  ],
+  [
+    "Appoggiatura",
+    "leaning",
+    "A type of ornament that creates a \"yearning\" effect"
+  ],
+  [
+    "Basso continuo",
+    "continuous bass",
+    "Continuous bass accompaniment by chordal instrument(s) and bass instrument(s) (see figured bass.)"
+  ],
+  [
+    "A bocca chiusa",
+    "mouth closed",
+    "Wordless humming in a choral piece"
+  ],
+  [
+    "Chiuso",
+    "closed",
+    "Calls for a horn to be muted by hand"
+  ],
+  [
+    "Coll'arco",
+    "with the bow",
+    "Cancels col legno and pizzicato (in a string passage, arco is usually expected, as it is the \"default\" approach, and is not written except at the end of col legno or pizzicato passages.)"
+  ],
+  [
+    "Colla voce",
+    "with the voice",
+    "A note to accompanists to play with (in time with) the singer's text, especially when slowing for textual effect"
+  ],
+  [
+    "Col legno",
+    "with the wood",
+    "Calls for a bowed instrument's strings to be struck with the wood of the bow rather having the hair of the bow drawn over the strings"
+  ],
+  [
+    "Coloratura",
+    "coloration",
+    "Elaborate ornamentation of a vocal line"
+  ],
+  [
+    "Glissando",
+    "glide",
+    "A sweeping glide from one pitch to another used for dramatic effect"
+  ],
+  [
+    "Legato",
+    "tied together",
+    "A series of notes played with a smooth connection between them"
+  ],
+  [
+    "Martellato",
+    "hammered",
+    "Notes are strongly accented and detached"
+  ],
+  [
+    "Con sordino",
+    "with mute",
+    "Calls for mute to be applied, esp. to string instruments."
+  ],
+  [
+    "Senza sordino",
+    "without mute",
+    "Calls for mute to be removed, esp. from string instruments."
+  ],
+  [
+    "Pizzicato",
+    "plucked",
+    "Calls for a bowed instrument to be plucked with the fingers"
+  ],
+  [
+    "Portamento",
+    "carrying",
+    "A sliding of pitch between two notes"
+  ],
+  [
+    "Portato",
+    "carried",
+    "A style of playing between staccato and legato"
+  ],
+  [
+    "Sforzando",
+    "using force",
+    "Played with strong, marked emphasis"
+  ],
+  [
+    "Coperti",
+    "covered",
+    "Of a drum, muted with a cloth"
+  ],
+  [
+    "Una corda",
+    "one string",
+    "With the soft pedal, on a piano"
+  ],
+  [
+    "Due corde",
+    "two strings",
+    "With the soft pedal, on a piano. For why both terms exist, see piano."
+  ],
+  [
+    "Tre corde or tutte le corde",
+    "Three strings or all the strings",
+    "Cancels an una corda"
+  ],
+  [
+    "Spiccato",
+    "separated",
+    "Playing a stringed instrument by bouncing the bow lightly on the strings"
+  ],
+  [
+    "Tutti",
+    "all",
+    "A direction for the entire ensemble to play or sing, rather than just a soloist or principal player"
+  ],
+  [
+    "staccatissimo",
+    "very detached",
+    "Forcefully exaggerated staccato"
+  ],
+  [
+    "Staccato",
+    "detached",
+    "A form of musical articulation in which notes are distinct and separated from each other by short gaps"
+  ],
+  [
+    "Scordatura",
+    "mistuning",
+    "Alternate tuning (of strings)"
+  ],
+  [
+    "vibrato",
+    "vibrating",
+    "A rapid repetitive variation or undulation in the pitch of a tone"
+  ]
+]
