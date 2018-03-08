@@ -1,6 +1,6 @@
 # Musical Italian
 
-How-it's-done post [here](https://www.phpied.com/italiano/)
+How-it's-done post [here](https://www.phpied.com/how-its-made-italian-slang-musicians/)
 
 ## Try it out
 
