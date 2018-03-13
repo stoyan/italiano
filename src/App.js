@@ -36,12 +36,19 @@ const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 let webvoices = null;
 if (
   'SpeechSynthesisUtterance' in window &&
-  'speechSynthesis' in window && 
-  'onvoiceschanged' in speechSynthesis
+  'speechSynthesis' in window
 ) {
-  speechSynthesis.onvoiceschanged = () => {
-    webvoices = speechSynthesis.getVoices().filter(v => v.lang === 'it-IT' && v.localService);
+  if ('onvoiceschanged' in speechSynthesis) {
+    speechSynthesis.onvoiceschanged = () => {
+      webvoices = getVoices();
+    }
+  } else if (speechSynthesis.getVoices) {
+      webvoices = getVoices();
   }
+}
+
+function getVoices() {
+  return speechSynthesis.getVoices().filter(v => v.lang === 'it-IT' && v.localService);
 }
 
 let term;
