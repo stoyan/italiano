@@ -92,7 +92,7 @@ function getAnswer(i) {
 }
 
 function getAudio() {
-  if (webvoices){
+  if (webvoices && navigator.onLine === false) {
     return [];
   }
   const word = justLetters(term[0]);
@@ -163,14 +163,13 @@ class App extends Component {
   say() {
     this.pause();
     this.setState({pause: false});
-    if (webvoices) {
+    if (webvoices && navigator.onLine === false) {
       const u = new SpeechSynthesisUtterance(term[0]);
       u.voice = webvoices[Math.floor(Math.random() * webvoices.length)];
       speechSynthesis.speak(u);
     } else {
       this.state.audio[Math.floor(Math.random() * this.state.audio.length)].play();  
-    }
-    
+    }    
   }
   
   toggleSettings() {
