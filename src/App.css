@@ -1,5 +1,6 @@
 .card {
-  border: 1px solid #233041;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0% ,0.2);
   border-radius: 4px;
   padding: 30px;
   margin: 20px;
@@ -40,11 +41,29 @@ button {
 
 .settingsLink {
   cursor: pointer;
+  text-decoration: none;
+  color: #222;
 }
 
 .settingsButton {
   margin-top: 10px;
   background: #50ae6f;
+}
+
+.wordsToggle {
+  text-align: right;
+}
+
+.words {
+  text-align: left;
+}
+
+.words td {
+  border-top: 1px solid #233041;
+}
+
+.words h3 {
+  font-variant: small-caps;
 }
 
 /* I'm done, let https://davidwalsh.name/css-flip take over */

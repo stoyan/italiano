@@ -48,6 +48,30 @@
     .smallprint {
       font-size: small;
     }
+    
+    @media (max-width: 480px) {                  
+      #shortcuts {display: none;}
+      h1 {font-size: 30px;}
+      h2 {margin: 30px 0 15px;}
+      .App-header, .App-footer {padding: 10px;}
+    }
+    #home {
+      position: absolute;
+      text-decoration: none;
+      font-size: medium;
+      top: 10px;
+      left: 10px;
+      opacity: 0.8;
+    }
+    @media (min-width: 480px) {
+      #home::after {
+        content: ' Home';
+      }
+    }
+    #home:hover {
+      opacity: 0.95;
+      text-decoration: underline;
+    }
     </style>
   </head>
   <body>
@@ -55,18 +79,21 @@
       <div class="App-header">
         <h1>Italian for musicians</h1>
         <p>Flashcards for practicing musical terms in Italian</p>
+        <a href="/" title="Go to the home page" id="home">⬅</a>
       </div>
       <div class="App-body" id="root">Loading the flashcards...</div>
-      <p class="smallprint">
+      <p class="smallprint" id="shortcuts">
         Keyboard shortcuts: 
           Play ('P' or 'p' or space),
           Next ('N' or 'n' or right arrow),
           Flip ('F' or 'f' or down arrow),
       </p>
       <div class="App-footer smallprint">
-        coding by <a href="https://music.stoyanstefanov.com/">Stoyan</a>, 
-        content by <a href="https://en.wikipedia.org/wiki/List_of_Italian_musical_terms_used_in_English">Wikipedia</a>,
-        <a href="https://www.phpied.com/say-yuri/">pronunciation by MacOS</a>.
+        <p>
+          coding by <a href="https://music.stoyanstefanov.com/">Stoyan</a>, 
+          content by <a href="https://en.wikipedia.org/wiki/List_of_Italian_musical_terms_used_in_English">Wikipedia</a>,
+          <a href="https://www.phpied.com/say-yuri/">pronunciation by MacOS</a>.
+        </p>
       </div>
     </div>
     

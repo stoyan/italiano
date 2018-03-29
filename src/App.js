@@ -55,8 +55,9 @@ let term;
 
 let settings = {};
 Object.keys(dictionary).map(key => settings[key] = true);
-if (location.hash.substring(1)) {
-  const hash = location.hash.substring(1).split(',');
+const locoHash = location.hash.substring(1);
+if (locoHash && locoHash !== 'words') {
+  const hash = locoHash.split(',');
   Object.keys(settings).forEach(s => {
     settings[s] = hash.includes(s);
   });
@@ -67,9 +68,6 @@ if (location.hash.substring(1)) {
   }
 }
 
-function getCount() {
-  return null;
-}
 function getQuestion(i) {
   const topics = Object.keys(dictionary).filter(t => settings[t]);
   const topic = topics[Math.floor(Math.random() * topics.length)];
@@ -112,11 +110,11 @@ class App extends Component {
     this.state = {
       question: getQuestion(1),
       answer: getAnswer(1),
-      total: getCount(),
       i: 1,
       audio: getAudio(1),
       pause: false,
       settings: false,
+      words: location.hash.substring(1) === 'words',
     };
     window.addEventListener('keydown', (e) => {
       // space bar
@@ -179,6 +177,10 @@ class App extends Component {
     this.setState({settings: !this.state.settings});
   }
   
+  toggleWords() {
+    this.setState({words: !this.state.words});
+  }
+  
   render() {
     return (
       <div>
@@ -195,11 +197,6 @@ class App extends Component {
           : null
           }
         </div>
-        {
-          this.state.total 
-            ? <Count i={this.state.i} total={this.state.total} />
-            : null
-        }
         <Flashcard 
           question={this.state.question}
           answer={this.state.answer}
@@ -210,15 +207,23 @@ class App extends Component {
           {iOS ? 'say' : '▶'}
         </button>
         {' '}        
-        {
-          (this.state.total && this.state.i >= this.state.total)
-            ? null
-            : <button 
-                className="nextButton" 
-                onClick={this.nextQuestion.bind(this)}>
-                next...
-              </button>
-        }
+        <button 
+          className="nextButton" 
+          onClick={this.nextQuestion.bind(this)}>
+          next...
+        </button>
+        <div className="wordsToggle">      
+          <a href={this.state.words ? '#words' : '#'} className="settingsLink" onClick={this.toggleWords.bind(this)}>
+            📖 
+            {this.state.words ? ' Hide the list of words' : ' Show all the words'}
+          </a>
+          {this.state.words 
+            ? <div>
+                <Words /> 
+              </div>
+            : null
+          }
+        </div>
       </div>
     );
   }
@@ -254,7 +259,7 @@ class Flashcard extends Component {
   }
 
   render() {
-    const className = "card flip-container" + (this.state.reveal ? ' flip' : '');
+    const className = 'card flip-container' + (this.state.reveal ? ' flip' : '');
     return (
       <div><center>
         <div className={className} onClick={this.flip.bind(this)}>
@@ -272,11 +277,6 @@ class Flashcard extends Component {
     );
   }
 }
-
-const Count = ({i, total}) =>
-  <div>
-    Question {i} / {total}
-  </div>;
 
 function updateSettings(e) {
   settings[e.target.getAttribute('data-id')] = e.target.checked;
@@ -302,6 +302,28 @@ const Settings = ({init}) =>
       </div>
     )}
   </div>;
+  
+const Words = () =>
+  <div className="words">
+  {Object.keys(dictionary).map(topic =>
+    <div key={topic}>
+      <h3>{topic}</h3>
+      <table cellSpacing="0" cellPadding="4"><tbody>
+        <tr><th>Term</th><th>Translation</th><th>Info</th></tr>
+        {
+          dictionary[topic].map(k => 
+            <tr key={k[0]}>
+              <td>{k[0]}</td>
+              <td>{k[1]}</td>
+              <td>{k[2]}</td>
+            </tr>
+          )
+        }
+      </tbody></table>
+    </div>
+  )}
+  </div>;
+  
 
 export default App;
 
